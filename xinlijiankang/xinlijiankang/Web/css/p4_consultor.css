@@ -1,0 +1,66 @@
+@charset "utf-8";
+/* CSS Document */
+/*主体部分*/
+
+/*左半边，列表页版块*/	
+.consultleft{
+	width:55vw;
+	height:auto;
+	float:left;
+	margin-bottom:5vw;
+	background-color:rgba(255,255,255,0.3);
+	padding:1.2vw 1.5vw;
+	box-shadow:0vw 0vw 0.06vw 0vw rgba(180,180,180,1.00);
+	}
+
+.consultleft img{
+	height:2vw;
+	width:auto;
+	}
+.consultleft hr{border:0.08vw solid #000;}	
+.content{
+	border:0.06vw solid black;
+	height:10vw;
+	margin-top:1.5vw;
+	}
+.content img{
+	height:10vw;
+	width:12vw;
+	float:left;
+	}
+.content ul{
+	float:left;
+	margin-left:3vw;
+	margin-top:1vw;
+	width:33vw;
+	}
+.content ul li{
+	font-size:1.1vw;
+	margin-top:1vw;
+	}
+.content .more{
+	float:right;
+	color:#0970a0;
+	margin-right:-5vw;
+	}
+	
+/*页面切换*/
+.list{
+	width:90%;
+	height:2vw;
+	margin:1.2vw 5vw 1.2vw 12vw;
+	font-family:"黑体";
+	font-size:1vw;
+}
+.list li{
+	display:block;
+	float:left;
+	line-height:2vw;
+	text-align:center;
+	padding:0.1vw 0.5vw;
+	margin:0 0.5vw;
+	border-radius:0.5vw;
+}
+.list_btn{
+	background-color:#FFF;
+}

@@ -1,0 +1,177 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>在线问答</title>
+<link href="css/p5_qaonline.css" rel="stylesheet" type="text/css">
+<link href="css/common/reset.css" rel="stylesheet" type="text/css">
+<link href="css/common/common.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<!--头部部分 各个页面通用*-->
+<div class="header">
+    <img src="images/tittle.png">
+    <div class="search"><!--搜索框*-->
+        <img  src="images/searchBorder.png">
+        <img class="searchicon" src="images/searchIcon.png">
+        <img src="images/search00.png">
+    </div>
+</div>
+
+<!--导航部分 各个页面通用*-->
+<div class="nav">
+	<ul>
+         <li> <!--每个li把icons和链接放在一起 达到hover的时候能将效果覆盖到icon上-->
+             <img  src="images/navHomeIcon.png"><a href="index.html">首页</a>
+        </li>
+        <li> 
+             <img  src="images/navHomeIcon.png"><a href="p1_centersurvey.html">中心概况</a>
+        </li>
+        <li> 
+             <img  src="images/navHomeIcon.png"><a href="p2_center_list.html">中心动态</a>
+        </li>
+        <li> 
+             <img  src="images/navHomeIcon.png"><a href="p3_association_list.html">心协动态</a>
+        </li>
+        <li> 
+             <img  src="images/navHomeIcon.png"><a href="p4_consultor.html">咨询师简介</a>
+        </li>
+        <li> 
+             <img  src="images/navHomeIcon.png"><a href="p5_qaonline.html">在线问答</a>
+        </li>
+        <li> 
+             <img  src="images/navHomeIcon.png"><a href="p6_appointment.html">咨询预约</a>
+        </li>
+        <li> 
+             <img  src="images/navHomeIcon.png"><a href="p7_article_list.html">心灵驿站</a>
+        </li>
+         <li> 
+             <img  src="images/navHomeIcon.png"><a href="p8_download.html">下载专区</a>
+        </li>
+    </ul>
+</div>
+
+<!--首页主体部分 首页编码为p0-->
+<div class="main">
+        <div class="p5_main">
+        	<img src="images/qaonline_icon.png" style="width:9.5vw;height:auto;">
+            <hr>
+            <center><h1>在线咨询</h1></center>
+            <p>同学你好，这里是武汉理工大学心理健康教育中心的在线问答版块<br>
+            你可以在这里向我们的咨询师们倾诉你的问题，我们将尽力解答<br>
+            请同学在留言时，留下你的email或者QQ号或者手机号方便联系<br>
+            我们对这些信息将会严格保密。你的留言以及咨询师的回复将会向大家展示<br>
+            如果有需要请点击右上角粉色的在线预约按钮。预约到中心进行当面心理咨询<br>
+            </p>
+
+            <div id="dishide">
+                <span>昵&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;称</span><input type="text" style="width:10vw;">
+                <span>年&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;级</span><input type="text" style="width:10vw;">
+                <span>性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别</span><input type="text" style="width:3vw;"><br>
+                <span>邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱</span><input type="text" style="width:10vw;">
+                <span>咨询老师</span><input type="text" style="width:10vw;"><br>
+                <span>问题简介</span><input type="text" style="width:39vw;"><br>
+                <span>咨询老师</span><input type="text" style="width:39vw;height:15vw;">
+                <input type="button" class="submitbtn" value="提&nbsp;&nbsp;&nbsp;交">
+            </div>
+            <input type="button" id="iwantq" onClick="showtext()" value="我要留言">
+			<script type="text/javascript"> 
+				var i =1; 
+				function showtext(){
+				var shide = document.getElementById("dishide");
+				var changevalue=document.getElementById("iwantq");
+				if(i%2==1){
+						shide.style.display='block';
+						changevalue.value="收起";
+					}
+					if(i%2==0){
+						shide.style.display='none';
+						changevalue.value="我要留言";
+					}
+					i++;
+					}
+            </script>              
+            <div class="tags">
+              <img src="images/tags_1.png"  class="tags_1">
+              <img src="images/tags_2.png"  class="tags_2">
+              <img src="images/tags_3.png"  class="tags_3">
+              <img src="images/tags_4.png"  class="tags_4">
+              <img src="images/tags_5.png"  class="tags_5">
+              <img src="images/tags_6.png"  class="tags_6">
+              <img src="images/tags_7.png"  class="tags_7">
+              <img src="images/tags_8.png"  class="tags_8">
+              <img src="images/tags_9.png"  class="tags_9">
+              <img src="images/tags_10.png"  class="tags_10">
+            </div>
+            <div class="qacontent">
+            	<div class="contentleft">
+                	<p>CC</p>
+                    <p>张老师</p>
+                </div>
+                <div class="contentright">
+                	<p>我感觉很难预约到老师，该怎么办？<span class="all">显示全部</span><span>2016年7月12日</span></p>
+                    <hr>
+                    <p><span>2016年7月12日</span><br>我感觉很难预约到老师，该怎么到老师，该怎么办到老师，该怎么办到老师，该怎么办到老师，该怎么办到老师，该怎么办到老师，该怎么办的我哦哦我我哦的。
+                    <span class="all">显示全部</span></p>
+                </div>
+                <hr style="width:52.5vw;">
+            </div>
+            <div class="qacontent">
+            	<div class="contentleft">
+                	<p>CC</p>
+                    <p>张老师</p>
+                </div>
+                <div class="contentright">
+                	<p>我感觉很难预约到老师，该怎么办？<span class="all">显示全部</span><span>2016年7月12日</span></p>
+                    <hr>
+                    <p><span>2016年7月12日</span><br>我感觉很难预约到老师，该怎么到老师，该怎么办到老师，该怎么办到老师，该怎么办到老师，该怎么办到老师，该怎么办到老师，该怎么办的我哦哦我我哦的。
+                    <span class="all">显示全部</span></p>
+                </div>
+                <hr  style="width:52.5vw;">
+            </div>
+            <div class="qacontent">
+            	<div class="contentleft">
+                	<p>CC</p>
+                    <p>张老师</p>
+                </div>
+                <div class="contentright">
+                	<p>我感觉很难预约到老师，该怎么办？<span class="all">显示全部</span><span>2016年7月12日</span></p>
+                    <hr>
+                    <p><span>2016年7月12日</span><br>我感觉很难预约到老师，该怎么到老师，该怎么办到老师，该怎么办到老师，该怎么办到老师，该怎么办到老师，该怎么办到老师，该怎么办的我哦哦我我哦的。
+                    <span class="all">显示全部</span></p>
+                </div>
+                <hr  style="width:52.5vw;">
+            </div>
+            <!--页面切换-->
+            <ul class="list_page">
+               <li class="list_page_btn">首页</li>
+               <li class="list_page_btn">上一页</li>
+               <li>1</li>
+               <li>2</li>
+               <li>3</li>
+               <li>4</li>
+               <li>5</li>
+               <li class="list_page_btn">下一页</li>
+               <li class="list_page_btn">尾页</li>
+            </ul>
+        <!--页面切换-->
+        </div>
+
+        <!--首页轮播图右侧的三个按钮 各个页面通用-->
+        <div class="button">
+            <a><img src="images/button_1.png"></a>
+            <a><img src="images/button_2.png"></a>
+            <a><img src="images/button_3.png"></a>
+        </div>
+          
+</div>
+
+<!--底部部分 各个页面通用*-->
+<div class="footer">
+
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,112 @@
+@charset "utf-8";
+/* CSS Document */
+.p5_main{
+	width:55vw;
+	float:left;
+	background-color:rgba(255,255,255,0.3);
+	padding:1.2vw 1.5vw;
+	box-shadow:0vw 0vw 0.06vw 0vw rgba(180,180,180,1.00);
+	margin-bottom:3vw;
+	}
+.p5_main h1{
+	color:#317ca0;
+	margin:1.5vw auto;
+	font-size:1.4vw;
+}
+.p5_main p{
+	font-size:1.2vw;
+	line-height:3vw;
+	margin-left:2vw;
+}
+#dishide{display:none;}
+#dishide span{
+	margin-left:2vw;
+	color:#317ca0;
+	margin-top:3vw;
+	}
+#dishide input{
+	margin-left:1vw;
+	margin-top:1vw;
+	}
+#dishide .submitbtn{
+	width:50vw;
+	margin-left:2vw;
+	background:#0970a0;
+	color:white;}
+#iwantq{
+	color:white;
+	background:#3cc996;
+	width:50vw;
+	margin-left:2vw;
+	padding:0.3vw 0vw;
+	margin-top:1vw;
+	font:1vw;
+	}
+.tags{
+	position:relative;
+	width:48vw;
+	margin-left:4vw;
+	height:10vw;
+	margin-top:1vw;
+	}
+.tags img{width:auto;height:1.8vw;}
+.tags_1{position:relative;top:2vw;left:3vw;}
+.tags_2{position:relative;top:8vw;}
+.tags_3{position:relative;top:3.7vw;}
+.tags_4{position:relative;top:3vw;left:25vw;}
+.tags_5{position:relative;top:4vw;}
+.tags_6{position:relative;top:7vw;}
+.tags_7{position:relative;top:5vw;}
+.tags_8{position:relative;top:8vw;}
+.tags_9{position:relative;top:4.8vw;}
+.tags_10{position:relative;top:-1.6vw;left:15vw;}
+.qacontent{margin-top:2vw;}
+.contentleft{
+	float:left;
+	}
+.contentleft p{
+	color:#0970a0;
+	text-align:left;
+	margin-bottom:1vw;}
+.contentright{
+	float:left;
+	margin-left:2vw;
+	}
+.contentright p{
+	width:44vw;
+	margin-bottom:1vw;
+	line-height:1.5vw;
+	font-size:1.2vw;}
+.contentright p span{
+	font-size:0.8vw;
+	color:gray;
+	float:right;
+	}
+.contentright p .all{
+	font-size:1vw;
+	color:#0970a0;
+    float:none;
+	}
+.qacontent hr{
+	clear:both;}
+	
+/*页面切换*/
+.list_page{
+	height:2vw;
+	margin-top:2vw;
+	font-family:"黑体";
+	font-size:1vw;
+	margin-left:12vw;
+}
+.list_page li{
+	display:block;
+	float:left;
+	line-height:2vw;
+	text-align:center;
+	padding:0.1vw 0.5vw;
+	margin:0 0.5vw;
+	border-radius:0.5vw;
+}
+.list_page_btn{
+	background-color:rgba(156,183,239,1.00);
+}

@@ -1,0 +1,193 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 轮播图 */
+.flexslider {
+	margin: 0px auto 1.2vw;
+	position: relative;
+	width: 52vw;
+	height: 25.2vw;
+	overflow: hidden;
+	zoom: 1;
+	float:left;
+}
+.flexslider .slides li {
+	width: 100%;
+	height: 100%;
+}
+.flexslider .slides a img {
+	width: 52vw;
+	height: 25.2vw;
+	display: block;
+}
+/* 左右切换 */
+.flex-direction-nav a {
+	width: 4.1vw;
+	height: 4.1vw;
+	line-height: 99em;
+	overflow: hidden;
+	margin: -2.1vw 0 0;
+	display: block;
+	background:url(../images/ad_ctr.png) no-repeat;
+	position: absolute;
+	top: 50%;
+	z-index: 10;
+	cursor: pointer;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	-webkit-transition: all .3s ease;
+	border-radius: 2.1vw;
+}
+.flex-direction-nav .flex-next {
+	background-position: 0 -4.6vw;
+	right: 0;
+}
+.flex-direction-nav .flex-prev {
+	background-position: 0 0vw;
+	left: 0;
+}
+.flexslider:hover .flex-next {
+	opacity: 0.8;
+	filter: alpha(opacity=25);
+}
+.flexslider:hover .flex-prev {
+	opacity: 0.8;
+	filter: alpha(opacity=25);
+}
+.flexslider:hover .flex-next:hover,
+.flexslider:hover .flex-prev:hover {
+	opacity: 1;
+	filter: alpha(opacity=50);
+}
+/*dot切换*/
+.flex-control-nav {
+	width: 100%;
+	position: absolute;
+	bottom: 0.6vw;
+	text-align: center;
+}
+.flex-control-nav li {
+	margin: 0 0.12vw;
+	display: inline-block;
+	zoom: 1;
+	*display: inline;
+}
+.flex-control-paging li a {
+	background:url(../images/dot.png) no-repeat 0 -0.96vw;
+	display: block;
+	height: 0.96vw;
+	overflow: hidden;
+	text-indent: -99em;
+	width: 0.96vw;
+	cursor: pointer;
+}
+.flex-control-paging li a.flex-active,
+.flex-control-paging li.active a {
+	background-position: 0 0;
+}
+
+/* 新闻动态 */
+.p0_news{
+	margin-top:0.5vw;
+	width:49vw;
+	height:55vw;
+	float:left;
+	background-color:rgba(255,255,255,0.3);
+	padding:1.2vw 1.5vw;
+	box-shadow:0vw 0vw 0.06vw 0vw rgba(180,180,180,1.00);
+	margin-bottom:2vw;
+	}
+.newstittle{
+	width:10vw;
+	height:auto;
+	}
+.newsleft{
+	margin-top:0.8vw;
+	width:30vw;
+	float:left;
+	margin-bottom:1.5vw;
+	}
+.newsleft h3{
+	font-size:1.44vw;
+	font-family:"等线Light";
+	margin-top:0.6vw;}
+.newsleft p{
+	font-size:1vw;
+	font-family:"等线Light";
+	margin-top:0.6vw;
+	line-height:1.5vw;
+}	
+.newsright{
+	width:18vw;
+	float:right;	
+	}
+.nrtitle{
+	font-size:1vw;
+	font-family:"等线Light";
+	margin-top:0.3vw;
+	line-height:2.2vw;
+	}
+.newsbottom{
+	float:left;
+	margin:1.5vw 0vw 1vw 1.4vw;
+	}
+.newsbottom p{
+	font-size:1vw;
+	font-family:"等线Light";
+	margin-top:0.6vw;
+	line-height:1.5vw;
+	width:13vw;
+	}
+.newsbottom img{width:14.5vw;height:auto}
+.newsright hr{border:0.01vw solid rgba(179,179,179,1.00);}
+
+/* 问答案例 */		
+.p0_qa{
+	margin-top:0.5vw;
+	width:23.5vw;
+	height:55vw;
+	float:right;
+	padding:1.2vw 1.2vw 1.2vw 1.2vw;
+	}
+.p0_qa p{
+	font-size:1vw;
+	font-family:"等线Light";
+	margin-top:0.8vw;
+	line-height:1.5vw;
+	width:23vw;	
+	padding-bottom:1vw;
+	}
+.p0_qa img{vertical-align:bottom;
+width:2vw;
+height:auto;}
+
+/* 心理美文 */
+.p0_essay{
+	width:75.5vw;
+	height:16vw;
+	background-color:rgba(255,255,255,0.3);
+	overflow:hidden;
+	padding:1vw 2vw 1vw;
+	box-shadow:0vw 0vw 0.06vw 0vw rgba(180,180,180,1.00);
+	}
+.p0_essayimg{
+	margin:0vw 1.8vw;
+	width:15vw;
+	height:auto;
+	display:block;
+	float:left;
+}
+.cover{
+	background:rgba(0,0,0,0.40);
+	float:left;
+	margin:0vw 1.8vw;
+	width:15vw;
+	height:2vw;
+	position:relative;
+	bottom:2vw;
+	}
+.cover p{color:white;font-size:1vw;}
+
+	
+	
+	

@@ -1,0 +1,100 @@
+@charset "utf-8";
+/* CSS Document */
+/*主体部分*/
+
+/*咨询师详情版块*/
+.detailleft{
+	width:74vw;
+	height:auto;
+	float:left;
+	margin-bottom:5vw;
+	background-color:rgba(255,255,255,0.3);
+	padding:1.2vw 3vw;
+	box-shadow:0vw 0vw 0.06vw 0vw rgba(180,180,180,1.00);
+	}
+.detailleft img{
+	height:1.5vw;
+	width:auto;
+	}
+.detailleft hr{
+	border:0.08vw solid black;
+	}
+.detailleft p{
+	font-size:1.5vw;
+	color:#0970a0;
+	margin-top:1vw;
+	margin-bottom:2vw;
+	}
+.detailleft .det img{
+	height:1.1vw;
+	width:auto;
+	margin-left:5vw;
+	}
+.detailleft .det span{
+	font-size:1vw;margin-left:0.5vw;
+	margin-right:5vw;
+	}
+.detailleft .det{
+	border-bottom:0.2vw dotted black;
+	width:40vw;
+	padding-bottom:1vw;
+	margin-bottom:2vw;
+	}
+	
+/*咨询师图片 姓名等  和详细介绍*/
+.infor img{
+	width:15vw;
+	height:15vw;
+	}
+.infor table tr td{
+	font-size:1vw;
+	letter-spacing:0.1vw;
+	color:#0970a0;
+	}
+.infor table{
+	width:20vw;
+	margin-top:3vw;
+	padding-left:2vw;
+	}
+.infor table tr{
+	height:3vw;
+	}
+.infor p{
+	width:73vw;
+	height:auto;
+	color:black;
+	font-size:1vw;
+	font-family:"华文细黑";
+	line-height:2vw;
+	}
+.infor span{color:#0970a0;}
+
+/*咨询师列表*/
+.consultor{
+	font-family:"华文细黑";
+	font-size:1vw;
+	padding:1vw;
+	margin-top:2vw;
+	margin-bottom:5vw;
+	width:24vw;
+	height:25.2vw;
+	float:right;
+	background-color:rgba(225,225,225,0.2);
+	border-radius:0.3vw;
+	box-shadow:0vw 0vw 0.06vw 0vw #838383;
+}
+.consultor img{
+	display:block;
+	height:1.5vw;
+	width:auto;
+}
+.consultor hr{
+	border:0.08vw solid #000;
+}
+.consultor ul{
+	margin:0.8vw auto 0;
+}
+.consultor ul li{
+	line-height:2vw;
+}
+.consultor a{color:#0970a0;}

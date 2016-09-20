@@ -1,0 +1,655 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="css/common/common.css" rel="stylesheet" type="text/css" />
+<link href="css/common/reset.css" rel="stylesheet" type="text/css" />
+<link href="css/p6_appointment.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/p6_appointment.js"></script>
+
+</head>
+
+<body>
+
+<!--头部部分 各个页面通用*-->
+<div class="header">
+    <img src="images/tittle.png">
+    <div class="search"><!--搜索框*-->
+        <img  src="images/searchBorder.png">
+        <img class="searchicon" src="images/searchIcon.png">
+        <img src="images/search00.png">
+    </div>
+</div>
+
+<!--导航部分 各个页面通用*-->
+<div class="nav">
+	<ul>
+         <li> <!--每个li把icons和链接放在一起 达到hover的时候能将效果覆盖到icon上-->
+             <img  src="images/navHomeIcon.png"><a href="index.html">首页</a>
+        </li>
+        <li> 
+             <img  src="images/navHomeIcon.png"><a href="p1_centersurvey.html">中心概况</a>
+        </li>
+        <li> 
+             <img  src="images/navHomeIcon.png"><a href="p2_center_list.html">中心动态</a>
+        </li>
+        <li> 
+             <img  src="images/navHomeIcon.png"><a href="p3_association_list.html">心协动态</a>
+        </li>
+        <li> 
+             <img  src="images/navHomeIcon.png"><a href="p4_consultor.html">咨询师简介</a>
+        </li>
+        <li> 
+             <img  src="images/navHomeIcon.png"><a href="p5_qaonline.html">在线问答</a>
+        </li>
+        <li> 
+             <img  src="images/navHomeIcon.png"><a href="p6_appointment.html">咨询预约</a>
+        </li>
+        <li> 
+             <img  src="images/navHomeIcon.png"><a href="p7_article_list.html">心灵驿站</a>
+        </li>
+         <li> 
+             <img  src="images/navHomeIcon.png"><a href="p8_download.html">下载专区</a>
+        </li>
+    </ul>
+</div>
+<!--主体部分-->
+<div class="main">
+    <div class="appoint_content">
+        <div class="appoint_title">
+            <img src="images/appoint_title.png" />
+        </div>
+        <hr />
+        <div class="appoint_detail">
+            <div class="appoint_describe">
+                <h3>咨询预约</h3>
+                <p>你好，我校心理咨询服务仅对武汉理工大学在校师生免费开放，暂不提供对外服务。您可根据自己的空闲时间选择你想要预约的时间段和咨询师，之间点击相关时段并填写相关信息后，即可预约。每人一周只能预约咨询一次，一次60分钟。</p>
+                <p>蓝色时间段代表该时段可以预约，浅红色代表该时段已经被预约！</p>
+                <p>将鼠标指针放到预约表中咨询师的姓名处，即可查看该咨询师的简介。</p>
+            </div>
+            <div class="appoint_time">
+                <table class="place" id="place">
+                    <tr class="campus">
+                        <td colspan="2" onmouseover="change(this,'maqv')">马区</td>
+                        <td colspan="2" onmouseover="change(this,'yuqv')">余区</td>
+                    </tr>
+                    <tr>
+                        <td style="color:#F46BF9" onmouseover="change(this,'dongyuan')">东院咨询室</td>
+                        <td style="color:#49D7A5" onmouseover="change(this,'nanhu')">南湖咨询室</td>
+                        <td style="color:#F9855D" onmouseover="change(this,'shengsheng')">升升咨询室</td>
+                        <td style="color:#746BF9" onmouseover="change(this,'xuehai')">学海咨询室</td>
+                    </tr>
+                </table>
+                <table class="day" id="day">
+                    <tr>
+                        <td>
+                        	星期一
+                            <br />
+                            <!--日期-->
+                            2016.6.16
+                        </td>
+                        <td>
+                        	星期二
+                            <br />
+                            2016.6.17
+                        </td>
+                        <td>
+                        	星期三
+                            <br />
+                            2016.6.18
+                        </td>
+                        <td>
+                        	星期四
+                            <br />
+                            2016.6.19
+                        </td>
+                        <td>
+                        	星期五
+                            <br />
+                            2016.6.20
+                        </td>
+                    </tr>
+                </table>
+                <table class="time dongyuan" id="dongyuan">
+                    <tr>
+                        <td style="border-left:0.2vw solid #E4E4E4">
+                        	<!--上班时间-->
+                            14:30-15:30
+                            <br />
+                            <!--值班老师-->
+                            唐光蓉
+                        </td>
+                        <td style="border-left:0.2vw solid #E4E4E4">
+                            14:30-15:30
+                            <br />
+                            江学军
+                        </td>
+                        <td>
+                            14:30-15:30
+                            <br />
+                            孙灯勇
+                        </td>
+                        <td style="border-left:0.2vw solid #E4E4E4">
+                            14:30-15:30
+                            <br />
+                            李倩
+                        </td>
+                        <td>
+                            14:30-15:30
+                            <br />
+                            梁宇颂
+                        </td>
+                        <td style="border-left:0.2vw solid #E4E4E4">
+                            14:30-15:30
+                            <br />
+                            熊捷
+                        </td>
+                        <td>
+                            14:30-15:30
+                            <br />
+                            孙灯勇
+                        </td>
+                        <td style="border-left:0.2vw solid #E4E4E4">
+                            14:30-15:30
+                            <br />
+                            唐光蓉
+                        </td>
+                        <td>
+                            14:30-15:30
+                            <br />
+                            梁宇颂
+                        </td>
+                        <td style="border-left:0.2vw solid #E4E4E4">
+                            14:30-15:30
+                            <br />
+                            熊捷
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border-left:0.2vw solid #E4E4E4">
+                            15:30-16:30
+                            <br />
+                            唐光蓉
+                        </td>
+                        <td style="border-left:0.2vw solid #E4E4E4">
+                            15:30-16:30
+                            <br />
+                            江学军
+                        </td>
+                        <td>
+                            15:30-16:30
+                            <br />
+                            孙灯勇
+                        </td>
+                        <td style="border-left:0.2vw solid #E4E4E4">
+                            15:30-16:30
+                            <br />
+                            李倩
+                        </td>
+                        <td>
+                            15:30-16:30
+                            <br />
+                            梁宇颂
+                        </td>
+                        <td style="border-left:0.2vw solid #E4E4E4">
+                            15:30-16:30
+                            <br />
+                            熊捷
+                        </td>
+                        <td>
+                            15:30-16:30
+                            <br />
+                            孙灯勇
+                        </td>
+                        <td style="border-left:0.2vw solid #E4E4E4">
+                            15:30-16:30
+                            <br />
+                            唐光蓉
+                        </td>
+                        <td>
+                            15:30-16:30
+                            <br />
+                            梁宇颂
+                        </td>
+                        <td style="border-left:0.2vw solid #E4E4E4">
+                            15:30-16:30
+                            <br />
+                            熊捷
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border-left:0.2vw solid #E4E4E4">
+                            16:30-17:30
+                            <br />
+                            唐光蓉
+                        </td>
+                        <td style="border-left:0.2vw solid #E4E4E4">
+                            16:30-17:30
+                            <br />
+                            江学军
+                        </td>
+                        <td>
+                            16:30-17:30
+                            <br />
+                            孙灯勇
+                        </td>
+                        <td style="border-left:0.2vw solid #E4E4E4">
+                            16:30-17:30
+                            <br />
+                            李倩
+                        </td>
+                        <td>
+                            16:30-17:30
+                            <br />
+                            梁宇颂
+                        </td>
+                        <td style="border-left:0.2vw solid #E4E4E4">
+                            16:30-17:30
+                            <br />
+                            熊捷
+                        </td>
+                        <td>
+                            16:30-17:30
+                            <br />
+                            孙灯勇
+                        </td>
+                        <td style="border-left:0.2vw solid #E4E4E4">
+                            16:30-17:30
+                            <br />
+                            唐光蓉
+                        </td>
+                        <td>
+                            16:30-17:30
+                            <br />
+                            梁宇颂
+                        </td>
+                        <td style="border-left:0.2vw solid #E4E4E4">
+                            16:30-17:30
+                            <br />
+                            熊捷
+                        </td>
+                    </tr>
+                </table>
+                <table class="time nanhu" id="nanhu">
+                    <tr>
+                        <td style="border-left:0.2vw solid #E4E4E4"></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            14:00-15:00
+                            <br />
+                            李倩
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="border-left:0.2vw solid #E4E4E4"></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            15:00-16:00
+                            <br />
+                            李倩
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="border-left:0.2vw solid #E4E4E4"></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            16:30-17:30
+                            <br />
+                            李倩
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="border-left:0.2vw solid #E4E4E4"></td>
+                        <td>
+                            18:30-19:30
+                            <br />
+                            程江红
+                        </td>
+                        <td></td>
+                        <td>
+                        	18:30-19:30
+                            <br />
+                            田禾
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="border-left:0.2vw solid #E4E4E4"></td>
+                        <td>
+                            19:30-20:30
+                            <br />
+                            程江红
+                        </td>
+                        <td></td>
+                        <td>
+                            19:30-20:30
+                            <br />
+                            田禾
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="border-left:0.2vw solid #E4E4E4"></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            20:30-21:30
+                            <br />
+                            田禾
+                        </td>
+                        <td></td>
+                    </tr>
+                </table>
+                <table class="time shengsheng" id="shengsheng">
+                    <tr>
+                        <td style="border-left:0.2vw solid #E4E4E4"></td>
+                        <td>
+                            18:30-19:30
+                            <br />
+                            周建民
+                        </td>
+                        <td></td>
+                        <td>
+                            18:30-19:30
+                            <br />
+                            周建民
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="border-left:0.2vw solid #E4E4E4"></td>
+                        <td>
+                            19:30-20:30
+                            <br />
+                            周建民
+                        </td>
+                        <td></td>
+                        <td>
+                            19:30-20:30
+                            <br />
+                            周建民
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="border-left:0.2vw solid #E4E4E4"></td>
+                        <td>
+                            20:30-21:30
+                            <br />
+                            周建民
+                        </td>
+                        <td></td>
+                        <td>
+                           20:30-21:30
+                            <br />
+                            周建民
+                        </td>
+                        <td></td>
+                    </tr>
+                </table>
+                <table class="time xuehai" id="xuehai">
+                    <tr>
+                        <td style="border-left:0.2vw solid #E4E4E4">
+                            18:30-19:30
+                            <br />
+                            雷五明
+                        </td>
+                        <td></td>
+                        <td>
+                            18:30-19:30
+                            <br />
+                            王小凤
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="border-left:0.2vw solid #E4E4E4">
+                            19:30-20:30
+                            <br />
+                            雷五明
+                        </td>
+                        <td></td>
+                        <td>
+                            19:30-20:30
+                            <br />
+                            王小凤
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="border-left:0.2vw solid #E4E4E4">
+                            20:30-21:30
+                            <br />
+                            雷五明
+                        </td>
+                        <td></td>
+                        <td>
+                            20:30-21:30
+                            <br />
+                            王小凤
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+                <table class="time yuqv" id="yuqv">
+                    <tr>
+                        <td style="border-left:0.2vw solid #E4E4E4">
+                            14:30-15:30
+                            <br />
+                            李竹
+                        </td>
+                        <td>
+                            14:30-15:30
+                            <br />
+                            周树芝
+                        </td>
+                        <td>	
+                            14:30-15:30
+                            <br />
+                            李竹
+                        </td>
+                        <td>
+                            14:30-15:30
+                            <br />
+                            周树芝
+                        </td>
+                        <td>
+                            14:30-15:30
+                            <br />
+                            孙维燕
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border-left:0.2vw solid #E4E4E4">
+                            15:30-16:30
+                            <br />
+                            李竹
+                        </td>
+                        <td>
+                            15:30-16:30
+                            <br />
+                            周树芝
+                        </td>
+                        <td>	
+                            15:30-16:30
+                            <br />
+                            李竹
+                        </td>
+                        <td>
+                            15:30-16:30
+                            <br />
+                            周树芝
+                        </td>
+                        <td>
+                            15:30-16:30
+                            <br />
+                            孙维燕
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border-left:0.2vw solid #E4E4E4">
+                            16:30-17:30
+                            <br />
+                            李竹
+                        </td>
+                        <td>
+                            16:30-17:30
+                            <br />
+                            周树芝
+                        </td>
+                        <td>	
+                            16:30-17:30
+                            <br />
+                            李竹
+                        </td>
+                        <td>
+                            16:30-17:30
+                            <br />
+                            周树芝
+                        </td>
+                        <td>
+                            16:30-17:30
+                            <br />
+                            孙维燕
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border-left:0.2vw solid #E4E4E4">
+                            18:30-19:30
+                            <br />
+                            肖婷
+                        </td>
+                        <td>
+                            18:30-19:30
+                            <br />
+                            肖华平
+                        </td>
+                        <td>	
+                            18:30-19:30
+                            <br />
+                            崔俊
+                        </td>
+                        <td>
+                            18:30-19:30
+                            <br />
+                            李红雨
+                        </td>
+                        <td>
+                            18:30-19:30
+                            <br />
+                            刘强
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border-left:0.2vw solid #E4E4E4">
+                            19:30-20:30
+                            <br />
+                            肖婷
+                        </td>
+                        <td>
+                            19:30-20:30
+                            <br />
+                            肖华平
+                        </td>
+                        <td>	
+                            19:30-20:30
+                            <br />
+                            崔俊
+                        </td>
+                        <td>
+                            19:30-20:30
+                            <br />
+                            李红雨
+                        </td>
+                        <td>
+                            19:30-20:30
+                            <br />
+                            刘强
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border-left:0.2vw solid #E4E4E4">
+                            20:30-21:30
+                            <br />
+                            肖婷
+                        </td>
+                        <td>
+                            20:30-21:30
+                            <br />
+                            肖华平
+                        </td>
+                        <td>	
+                            20:30-21:30
+                            <br />
+                            崔俊
+                        </td>
+                        <td>
+                            20:30-21:30
+                            <br />
+                            李红雨
+                        </td>
+                        <td>
+                            20:30-21:30
+                            <br />
+                            刘强
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div id="right"><!--右侧-->
+        <!--首页轮播图右侧的三个按钮 各个页面通用-->
+        <div class="button">
+            <a><img src="images/button_1.png"></a>
+            <a><img src="images/button_2.png"></a>
+            <a><img src="images/button_3.png"></a>
+        </div>    
+        <div class="address">
+        	<ul>
+            	<li>
+                	<p><img src="images/address_icon.png" />东院咨询室：B区勤工助学楼1楼;</p>
+                    <p><img src="images/tel_icon.png" />023-61852657;</p>
+                </li>
+                <li>
+                	<p><img src="images/address_icon.png" />南湖咨询室：B区勤工助学楼1楼;</p>
+                    <p><img src="images/tel_icon.png" />023-61852657;</p>
+                </li>
+                <li>
+                	<p><img src="images/address_icon.png" />升升咨询室：B区勤工助学楼1楼;</p>
+                    <p><img src="images/tel_icon.png" />023-61852657;</p>
+                </li>
+                <li>
+                	<p><img src="images/address_icon.png" />学海咨询室：B区勤工助学楼1楼;</p>
+                    <p><img src="images/tel_icon.png" />023-61852657;</p>
+                </li>
+                <li>
+                	<p><img src="images/address_icon.png" />余区咨询室：B区勤工助学楼1楼;</p>
+                    <p><img src="images/tel_icon.png" />023-61852657;</p>
+                </li>
+            </ul>
+        </div>
+	</div>
+</div>
+
+<!--底部部分 各个页面通用*-->
+<div class="footer" id="footer">
+
+</div>
+
+
+
+
+
+</body>
+</html>

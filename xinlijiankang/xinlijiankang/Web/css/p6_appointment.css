@@ -1,0 +1,98 @@
+@charset "utf-8";
+/* CSS Document */
+a{ color:#000;}
+/*主体部分*/
+
+
+/*预约咨询部分*/
+.appoint_content{
+	height:auto;
+	width:55vw;
+	float:left;
+	background-color:rgba(255,255,255,0.3);
+	padding:1.2vw 1.5vw;
+	box-shadow:0vw 0vw 0.06vw 0vw rgba(180,180,180,1.00);
+	margin-bottom:2vw;
+}
+.appoint_title img{
+	height:2vw;
+	width:auto;	
+}
+.appoint_content hr{
+	border:0.08vw solid #000;
+}
+.appoint_detail{
+	width:49vw;
+	height:auto;
+	margin:0 1vw;
+	font-family:'微软雅黑';
+	font-size:1.2vw;
+}
+.appoint_describe h3{
+	font-size:1.5vw;
+	text-align:center;
+	margin:1vw auto;
+}
+.appoint_describe p{
+	margin-bottom:1vw;
+}
+.appoint_time table{
+	width:53vw;
+	height:auto;
+	border-right:0.2vw solid #E4E4E4;
+	border-bottom:0.2vw solid #E4E4E4;
+}
+.appoint_time td{
+	text-align:center;
+	padding:0.5vw 0;
+	border-top:0.2vw solid #E4E4E4;
+}
+#dongyuan{z-index:999;position:absolute;}
+#dongyuan td{width:0vw;}
+/*校区*/
+.place{
+	margin-bottom:1vw;
+}
+.place td{
+	background-color:#F4F4F4;
+	cursor:pointer;
+}
+.campus td{
+	background-color:#E4E4E4;
+}
+/*日期*/
+.day td{
+	background-color:#F4F4F4;
+}
+.place td,.day td{
+	border-left:0.2vw solid #E4E4E4;
+}
+
+/*时间表*/
+.time{
+	border-top:0;
+}
+.time td{
+	width:10.4vw;
+	line-height:2vw;
+	background-color:#FFF;
+	border-left:0.2vw solid #F00;
+}
+
+
+.address{
+	width:20vw;
+	height:22.5vw;
+	float:right;
+	margin-top:1.5vw;
+	margin-bottom:5vw;
+	margin-left:1vw;
+}
+.address ul li{
+	height:5vw;
+	line-height:2vw;
+}
+
+
+
+

@@ -1,0 +1,77 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*主体*/
+
+	
+/*下载详情版块*/
+.detailleft{
+	width:55vw;
+	height:auto;
+	float:left;
+	margin-bottom:5vw;
+	background-color:rgba(255,255,255,0.3);
+	padding:1.2vw 1.5vw;
+	box-shadow:0vw 0vw 0.06vw 0vw rgba(180,180,180,1.00);
+	}
+.detailleft img{
+	height:1.5vw;
+	width:auto;
+	}
+.detailleft hr{
+	border:0.08vw solid black;
+	}
+.detailleft p{
+	font-size:1.5vw;
+	color:#0970a0;
+	margin-top:3vw;
+	margin-bottom:2vw;
+	}
+.detailleft .det img{
+	height:1.1vw;
+	width:auto;
+	}
+.detailleft .det span{
+	font-size:1vw;margin-left:0.5vw;
+	}
+.detailleft .det{
+	border-bottom:0.2vw dotted black;
+	width:40vw;
+	padding-bottom:1vw;
+	margin-bottom:2vw;
+	}
+	
+/*详情表格*/
+.downtable table{
+	width:40vw; 
+	margin:0 auto;
+	}
+.downtable table td{
+	border:0.1vw solid black;
+	padding:1vw;
+	font-size:1vw;
+	}
+.downtable table .tableright{
+	width:25vw; 
+	height:4vw;
+	}
+	
+/*上下篇切换*/
+.content_other{
+	width:90%;
+	margin:3vw auto 0;
+}
+.content_other img{
+	height:1.8vw;
+	width:auto;
+}
+.next{
+	float:right;
+}
+
+.right{
+	width:29vw;
+	float:right;
+	margin-bottom:5vw;
+}
+	

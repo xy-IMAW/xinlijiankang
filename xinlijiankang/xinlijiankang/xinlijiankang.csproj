@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C30123C6-AFC8-4215-826B-35650F513C16}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>xinlijiankang</RootNamespace>
+    <AssemblyName>xinlijiankang</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.1\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.0.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.0.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.0.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.0.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.0.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.0.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="scripts\ai.0.22.9-build00167.js" />
+    <Content Include="scripts\ai.0.22.9-build00167.min.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web\css\common\common.css" />
+    <Content Include="Web\css\common\content.css" />
+    <Content Include="Web\css\common\list.css" />
+    <Content Include="Web\css\common\reset.css" />
+    <Content Include="Web\css\p0_index.css" />
+    <Content Include="Web\css\p4_consultdetails.css" />
+    <Content Include="Web\css\p4_consultor.css" />
+    <Content Include="Web\css\p5_qaonline.css" />
+    <Content Include="Web\css\p6_appointment.css" />
+    <Content Include="Web\css\p8_downdetails.css" />
+    <Content Include="Web\css\p8_download.css" />
+    <Content Include="Web\images\address_icon.png" />
+    <Content Include="Web\images\ad_ctr.png" />
+    <Content Include="Web\images\alpha.png" />
+    <Content Include="Web\images\ansicon.png" />
+    <Content Include="Web\images\appoint_title.png" />
+    <Content Include="Web\images\article_title_icon.png" />
+    <Content Include="Web\images\association_title_icon.png" />
+    <Content Include="Web\images\backbtn0.png" />
+    <Content Include="Web\images\backbtn1.png" />
+    <Content Include="Web\images\background.png" />
+    <Content Include="Web\images\banner1.jpg" />
+    <Content Include="Web\images\banner2.jpg" />
+    <Content Include="Web\images\banner3.jpg" />
+    <Content Include="Web\images\bg.jpg" />
+    <Content Include="Web\images\bgBottom.png" />
+    <Content Include="Web\images\bgimg.jpg" />
+    <Content Include="Web\images\bgimg.png" />
+    <Content Include="Web\images\bgTop.png" />
+    <Content Include="Web\images\border0.png" />
+    <Content Include="Web\images\btn0.png" />
+    <Content Include="Web\images\btn1.png" />
+    <Content Include="Web\images\btn2.png" />
+    <Content Include="Web\images\btnbg.png" />
+    <Content Include="Web\images\btn_consult.png" />
+    <Content Include="Web\images\btn_psytest.png" />
+    <Content Include="Web\images\btn_qaonline.png" />
+    <Content Include="Web\images\buttonbg.png" />
+    <Content Include="Web\images\button_1.png" />
+    <Content Include="Web\images\button_2.png" />
+    <Content Include="Web\images\button_3.png" />
+    <Content Include="Web\images\center.png" />
+    <Content Include="Web\images\centermain.png" />
+    <Content Include="Web\images\center_conclude_icon.png" />
+    <Content Include="Web\images\center_title_icon.png" />
+    <Content Include="Web\images\consultor.jpg" />
+    <Content Include="Web\images\cont1_0.png" />
+    <Content Include="Web\images\cont1_1.png" />
+    <Content Include="Web\images\contbg0.png" />
+    <Content Include="Web\images\contbg0_1.png" />
+    <Content Include="Web\images\contbg1.png" />
+    <Content Include="Web\images\contbg1_0.png" />
+    <Content Include="Web\images\contbg1_1.png" />
+    <Content Include="Web\images\contbg2.png" />
+    <Content Include="Web\images\contbgpic1.png" />
+    <Content Include="Web\images\contboder.png" />
+    <Content Include="Web\images\content_article.png" />
+    <Content Include="Web\images\content_association.png" />
+    <Content Include="Web\images\content_author_icon.png" />
+    <Content Include="Web\images\content_center.png" />
+    <Content Include="Web\images\content_from_icon.png" />
+    <Content Include="Web\images\content_home.png" />
+    <Content Include="Web\images\content_last.png" />
+    <Content Include="Web\images\content_next.png" />
+    <Content Include="Web\images\content_read_icon.png" />
+    <Content Include="Web\images\content_seperate.png" />
+    <Content Include="Web\images\content_time_icon.png" />
+    <Content Include="Web\images\content_whole.png" />
+    <Content Include="Web\images\content_／.png" />
+    <Content Include="Web\images\conticon0.png" />
+    <Content Include="Web\images\conticon1.png" />
+    <Content Include="Web\images\contline0.png" />
+    <Content Include="Web\images\contline1.png" />
+    <Content Include="Web\images\contTittle0.png" />
+    <Content Include="Web\images\contTittle0_0.png" />
+    <Content Include="Web\images\contTittle0_1.png" />
+    <Content Include="Web\images\contTittle1.png" />
+    <Content Include="Web\images\contTittle1_0.png" />
+    <Content Include="Web\images\contTittle1_1.png" />
+    <Content Include="Web\images\contTittle2.png" />
+    <Content Include="Web\images\contTittleicon0.png" />
+    <Content Include="Web\images\contTittleicon1.png" />
+    <Content Include="Web\images\contTittleicon2.png" />
+    <Content Include="Web\images\da.png" />
+    <Content Include="Web\images\dot.png" />
+    <Content Include="Web\images\downcont.png" />
+    <Content Include="Web\images\downloadTittle.png" />
+    <Content Include="Web\images\downTittle.png" />
+    <Content Include="Web\images\essay.png" />
+    <Content Include="Web\images\footerbg.png" />
+    <Content Include="Web\images\headerLogo.png" />
+    <Content Include="Web\images\homebtn0.png" />
+    <Content Include="Web\images\homepic.jpg" />
+    <Content Include="Web\images\homeTittle.png" />
+    <Content Include="Web\images\hotphone.png" />
+    <Content Include="Web\images\laiyuanIcon.png" />
+    <Content Include="Web\images\lastbtn0.png" />
+    <Content Include="Web\images\latest_bg.png" />
+    <Content Include="Web\images\latest_title.png" />
+    <Content Include="Web\images\line0.png" />
+    <Content Include="Web\images\line1.png" />
+    <Content Include="Web\images\line2.png" />
+    <Content Include="Web\images\line3.png" />
+    <Content Include="Web\images\more.png" />
+    <Content Include="Web\images\moreIcon.png" />
+    <Content Include="Web\images\navAnwsIcon.png" />
+    <Content Include="Web\images\navBeforeIcon.png" />
+    <Content Include="Web\images\navCenterIcon.png" />
+    <Content Include="Web\images\navDownIcon.png" />
+    <Content Include="Web\images\navGaikuangIcon.png" />
+    <Content Include="Web\images\navHomeIcon.png" />
+    <Content Include="Web\images\navJianIcon.png" />
+    <Content Include="Web\images\navTxtIcon.png" />
+    <Content Include="Web\images\navXinxieIcon.png" />
+    <Content Include="Web\images\newsbg.png" />
+    <Content Include="Web\images\nextbtn0.png" />
+    <Content Include="Web\images\nextbtn1.png" />
+    <Content Include="Web\images\page_final.png" />
+    <Content Include="Web\images\page_first.png" />
+    <Content Include="Web\images\page_last.png" />
+    <Content Include="Web\images\page_next.png" />
+    <Content Include="Web\images\phone.png" />
+    <Content Include="Web\images\place.png" />
+    <Content Include="Web\images\qaonline_icon.png" />
+    <Content Include="Web\images\qicon.png" />
+    <Content Include="Web\images\readIcon.png" />
+    <Content Include="Web\images\search00.png" />
+    <Content Include="Web\images\searchBorder.png" />
+    <Content Include="Web\images\searchIcon.png" />
+    <Content Include="Web\images\searchTxt.png" />
+    <Content Include="Web\images\serachPadding.png" />
+    <Content Include="Web\images\tags_1.png" />
+    <Content Include="Web\images\tags_10.png" />
+    <Content Include="Web\images\tags_2.png" />
+    <Content Include="Web\images\tags_3.png" />
+    <Content Include="Web\images\tags_4.png" />
+    <Content Include="Web\images\tags_5.png" />
+    <Content Include="Web\images\tags_6.png" />
+    <Content Include="Web\images\tags_7.png" />
+    <Content Include="Web\images\tags_8.png" />
+    <Content Include="Web\images\tags_9.png" />
+    <Content Include="Web\images\tel_icon.png" />
+    <Content Include="Web\images\threebtnbg.png" />
+    <Content Include="Web\images\timeIcon.png" />
+    <Content Include="Web\images\tittle.png" />
+    <Content Include="Web\images\tittle0.png" />
+    <Content Include="Web\images\tittle1.png" />
+    <Content Include="Web\images\tittleIcon.png" />
+    <Content Include="Web\images\wen.png" />
+    <Content Include="Web\images\wendaIcon.png" />
+    <Content Include="Web\images\xinliIcon.png" />
+    <Content Include="Web\images\xinwenIcon.png" />
+    <Content Include="Web\images\xinwenPic.png" />
+    <Content Include="Web\images\xinxie.png" />
+    <Content Include="Web\images\xinxieImg0.png" />
+    <Content Include="Web\images\xinxieImg1.png" />
+    <Content Include="Web\images\xinxieTittle.png" />
+    <Content Include="Web\images\zixunshiTittle.png" />
+    <Content Include="Web\images\zixunTittle.png" />
+    <Content Include="Web\images\zuozheIcon.png" />
+    <Content Include="Web\index.html" />
+    <Content Include="Web\js\content_right_fixed.js" />
+    <Content Include="Web\js\jquery-1.10.2.min.js" />
+    <Content Include="Web\js\jquery.js" />
+    <Content Include="Web\js\js.js" />
+    <Content Include="Web\js\p5_jsqaonline.js" />
+    <Content Include="Web\js\p6_appointment.js" />
+    <Content Include="Web\js\slider.js" />
+    <Content Include="Web\p1_centersurvey.html" />
+    <Content Include="Web\p2_center_content.html" />
+    <Content Include="Web\p2_center_list.html" />
+    <Content Include="Web\p3_association_content.html" />
+    <Content Include="Web\p3_association_list.html" />
+    <Content Include="Web\p4_consultdetails.html" />
+    <Content Include="Web\p4_consultor.html" />
+    <Content Include="Web\p5_qaonline.html" />
+    <Content Include="Web\p6_appointment.html" />
+    <Content Include="Web\p7_article_content.html" />
+    <Content Include="Web\p7_article_list.html" />
+    <Content Include="Web\p8_downdetails.html" />
+    <Content Include="Web\p8_download.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>58194</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:58194/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。使用“NuGet 程序包还原”可下载这些程序包。有关更多信息，请参见 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

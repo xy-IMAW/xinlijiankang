@@ -1,0 +1,206 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>武汉理工大学心理健康教育网站</title>
+<link href="css/p0_index.css" rel="stylesheet" type="text/css">
+<link href="css/common/reset.css" rel="stylesheet" type="text/css">
+<link href="css/common/common.css" rel="stylesheet" type="text/css">
+</head>
+
+<body style="background-image:url(images/background.png);">
+
+<!--右侧热线电话和中心地址固定栏-->
+<img class="fixed_one" src="images/hotphone.png">
+<img class="fixed_two" src="images/center.png">
+
+<!--头部部分 各个页面通用*-->
+<div class="header">
+    <img src="images/tittle.png">
+    <div class="search"><!--搜索框*-->
+        <img  src="images/searchBorder.png">
+        <img class="searchicon" src="images/searchIcon.png">
+        <img src="images/search00.png">
+    </div>
+</div>
+
+<!--导航部分 各个页面通用*-->
+<div class="nav">
+	<ul>
+         <li> <!--每个li把icons和链接放在一起 达到hover的时候能将效果覆盖到icon上-->
+             <img  src="images/navHomeIcon.png"><a href="index.html">首页</a>
+        </li>
+        <li> 
+             <img  src="images/navHomeIcon.png"><a href="p1_centersurvey.html">中心概况</a>
+        </li>
+        <li> 
+             <img  src="images/navHomeIcon.png"><a href="p2_center_list.html">中心动态</a>
+        </li>
+        <li> 
+             <img  src="images/navHomeIcon.png"><a href="p3_association_list.html">心协动态</a>
+        </li>
+        <li> 
+             <img  src="images/navHomeIcon.png"><a href="p4_consultor.html">咨询师简介</a>
+        </li>
+        <li> 
+             <img  src="images/navHomeIcon.png"><a href="p5_qaonline.html">在线问答</a>
+        </li>
+        <li> 
+             <img  src="images/navHomeIcon.png"><a href="p6_appointment.html">咨询预约</a>
+        </li>
+        <li> 
+             <img  src="images/navHomeIcon.png"><a href="p7_article_list.html">心灵驿站</a>
+        </li>
+         <li> 
+             <img  src="images/navHomeIcon.png"><a href="p8_download.html">下载专区</a>
+        </li>
+    </ul>
+</div>
+
+<!--首页主体部分 首页编码为p0-->
+<div class="main">
+
+        <!--首页轮播图-->
+        <div id="banner_tabs" class="flexslider">
+                        <ul class="slides">
+                            <li>
+                                <a title="" target="_blank" href="#">
+                                    <img alt="" style="background:url(images/homepic.jpg) no-repeat;" src="images/alpha.png">
+                                </a>
+                            </li>
+                            <li>
+                                <a title="" href="#">
+                                    <img alt="" style="background:url(images/banner2.jpg) no-repeat ;" src="images/alpha.png">
+                                </a>
+                            </li>
+                            <li>
+                                <a title="" href="#">
+                                    <img alt="" style="background:url(images/banner3.jpg) no-repeat;" src="images/alpha.png">
+                                </a>
+                            </li>
+                            <li>
+                                <a title="" href="#">
+                                    <img alt="" style="background:url(images/banner2.jpg) no-repeat;" src="images/alpha.png">
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="flex-direction-nav">
+                            <li><a class="flex-prev" href="javascript:;">Previous</a></li>
+                            <li><a class="flex-next" href="javascript:;">Next</a></li>
+                        </ul>
+                        <ol id="bannerCtrl" class="flex-control-nav flex-control-paging">
+                            <li><a>1</a></li>
+                            <li><a>2</a></li>
+                            <li><a>2</a></li>
+                            <li><a>2</a></li>
+                        </ol>
+                    </div>
+        <script src="js/jquery-1.10.2.min.js"></script>
+        <script src="js/slider.js"></script>
+        <script type="text/javascript">
+        $(function() {
+            var bannerSlider = new Slider($('#banner_tabs'), {
+                time: 5000,
+                delay: 400,
+                event: 'hover',
+                auto: true,
+                mode: 'fade',
+                controller: $('#bannerCtrl'),
+                activeControllerCls: 'active'
+            });
+            $('#banner_tabs .flex-prev').click(function() {
+                bannerSlider.prev()
+            });
+            $('#banner_tabs .flex-next').click(function() {
+                bannerSlider.next()
+            });
+        })
+        </script>
+        
+        <!--首页轮播图右侧的三个按钮 各个页面通用-->
+        <div class="button" style="width:26vw;height:25.2vw;">
+            <a><img src="images/button_1.png" style="width:20vw;margin:3.2vw auto;"></a>
+            <a><img src="images/button_2.png" style="width:20vw;margin:3.2vw auto;"></a>
+            <a><img src="images/button_3.png" style="width:20vw;margin:3.2vw auto;"></a>
+        </div>
+        
+        <!--新闻动态 需要换图换文字-->        
+        <div class="p0_news">
+			<img src="images/xinwenIcon.png" class="newstittle" style="width:9.5vw;height:auto">
+            <hr style="border:0.03vw solid gray;">
+            <img src="images/centermain.png" style="display:block;width:4vw;">
+            <div class="newsleft">
+            	<img src="images/xinwenPic.png" style="width:29vw;height:18vw">
+                <h3>啦啦啦啦啦啦啦啦啦啦啦啦啦啦</h3>
+                <p>啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦 </p>
+            </div>
+            <div class="newsright">
+                <p class="nrtitle">啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦</p>
+                <hr>
+                <p class="nrtitle">啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦</p>
+                <hr>
+                <p class="nrtitle">啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦</p>
+                <hr>
+                <p class="nrtitle">啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦</p>
+                <hr>
+                <p class="nrtitle">啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦</p>
+            </div>
+            <img src="images/xinxie.png" style="display:block;clear:left;width:4vw;">
+            <div class="newsbottom">
+                <img src="images/xinxieImg0.png">
+                <p class="nrtitle">啦啦啦啦啦啦</p>
+                <p>啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦 </p>
+            </div> 
+            <div class="newsbottom">
+                <img src="images/xinxieImg0.png">
+                <p class="nrtitle">啦啦啦啦啦啦</p>
+                <p>啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦 </p>
+            </div> 
+            <div class="newsbottom">
+                <img src="images/xinxieImg0.png">
+                <p class="nrtitle">啦啦啦啦啦啦</p>
+                <p>啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦 </p>
+            </div> 
+            <p style="color:#33d49d;margin-left:44vw;cursor:pointer;font-size:1.2vw;">more></p>
+        </div>
+        <!--问答案例 动态的，需要换文字-->
+        <div class="p0_qa"><!--首页问答-->
+			<img src="images/wendaIcon.png" style="width:9.5vw;height:auto">
+            <hr>
+            <p><img src="images/wen.png">&nbsp;好方啊，大学好迷茫。。</p>
+            <p><img src="images/da.png">&nbsp;同学你好，美好的大学在向你招手，只要...</p>
+            <p><img src="images/wen.png">&nbsp;好方啊，大学好迷茫。。</p>
+            <p><img src="images/da.png">&nbsp;同学你好，美好的大学在向你招手，只要...</p>
+            <p><img src="images/wen.png">&nbsp;好方啊，大学好迷茫。。</p>
+            <p><img src="images/da.png">&nbsp;同学你好，美好的大学在向你招手，只要...</p>
+            <p><img src="images/wen.png">&nbsp;好方啊，大学好迷茫。。</p>
+            <p><img src="images/da.png">&nbsp;同学你好，美好的大学在向你招手，只要...</p>
+            <p><img src="images/wen.png">&nbsp;好方啊，大学好迷茫。。</p>
+            <p><img src="images/da.png">&nbsp;同学你好，美好的大学在向你招手，只要...</p>
+            <p><img src="images/wen.png">&nbsp;好方啊，大学好迷茫。。</p>
+            <p><img src="images/da.png">&nbsp;同学你好，美好的大学在向你招手，只要...</p>
+            <hr style="margin-top:2vw;">
+        </div>
+        <!--首页心理美文 需要更换图片-->
+        <div class="p0_essay">
+			<img src="images/xinliIcon.png" style="width:9.5vw;height:auto">
+            <hr style="margin-bottom:1vw;border:0.03vw solid gray;">
+            <img class="p0_essayimg" src="images/xinxieImg0.png">
+            <img class="p0_essayimg" src="images/xinxieImg0.png">
+            <img class="p0_essayimg" src="images/xinxieImg0.png">
+            <img class="p0_essayimg" src="images/xinxieImg0.png">
+            <div class="cover"><p>拉拉啊拉了阿联啦</p></div>
+            <div class="cover"><p>拉拉啊拉了阿联啦</p></div>
+            <div class="cover"><p>拉拉啊拉了阿联啦</p></div>
+            <div class="cover"><p>拉拉啊拉了阿联啦</p></div>
+        </div>      
+</div>
+
+
+<!--底部部分 各个页面通用*-->
+<div class="footer">
+
+</div>
+
+</body>
+</html>
